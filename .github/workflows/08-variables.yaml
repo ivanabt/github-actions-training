@@ -48,5 +48,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print Undefined Variable
-            run: |
-              echo "Varible: ${{env.UNDEFINED_VAR_WITH_DEFAULT}}"
+              run: |
+                echo "Varible: ${{env.UNDEFINED_VAR_WITH_DEFAULT}}"
