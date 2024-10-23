@@ -23,7 +23,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Build
-              run: echo "Building from tag ${{inputs.tag}}"
+              run: |
+                echo "Building from tag ${{inputs.tag}}"
+                exit 1
     deploy:
         runs-on: ubuntu-latest
         if: success().build && ${{!inputs.dry-run}}
